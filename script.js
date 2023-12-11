@@ -9,13 +9,15 @@ function toggleRotation(clickedContainer) {
    var p = container.querySelector('p');
    var num1 = container.querySelector('.num1');
    var num = container.querySelector('.num');
+   
  if (container === clickedContainer) {
    h1.classList.toggle("rotated");
    p.style.opacity = h1.classList.contains("rotated") ? 0 : 1;
+   
    num1.style.display = "none"; 
-   num.style.mariginTop = "90px"; 
+   num.style.mariginTop = "block"; 
    container.style.width = h1.classList.contains("rotated") ? "100px" : "403px";
-   container.style.height = h1.classList.contains("rotated") ? "367px" : "367px";
+   container.style.height = h1.classList.contains("rotated") ? "380px" : "380px";
    h1.style.width = h1.classList.contains("rotated") ? "240px" : "200px";
  } else {
    h1.classList.add("rotated");
@@ -23,7 +25,7 @@ function toggleRotation(clickedContainer) {
    num1.style.display = "block"; 
    num.style.mariginTop="0px" 
    container.style.width = "100px";
-   container.style.height = "367px";
+   container.style.height = "380px";
    h1.style.width = "240px";
  }
 });
@@ -32,6 +34,8 @@ function toggleRotation(clickedContainer) {
 
 toggleRotation(document.querySelectorAll(".container")[0]);
 toggleRotation(document.querySelectorAll(".container")[0]);
+
+
 
 
 
