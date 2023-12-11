@@ -21,8 +21,8 @@
         color: #EB1700;
         font-family: Poppins;
         font-size: 16px;
-        margin-bottom: 0px;
-        margin-top: 10px;
+        margin-bottom: 50px;
+        margin-top: 30px;
        /* margin-left:-300px; */
        }
        
@@ -42,7 +42,7 @@
          text-align:center;
          cursor: pointer;
          font-family:Poppins;
-         
+         margin-top:10px;
          
         font-size: 20px;
          transition: transform 0.3s ease-in-out;
@@ -63,6 +63,7 @@
        margin-left:-270px;
      
        }
+       
        @media only screen and (max-width: 768px) {
         body {
           flex-direction: column;
